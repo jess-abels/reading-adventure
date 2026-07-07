@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import "./Sidebar.css";
 
 export default function Sidebar() {
     const navItems = [
@@ -13,7 +14,7 @@ export default function Sidebar() {
 ];
 
   return (
-    <div>
+    <div id="sidebar">
     <h1>My Reading Adventure</h1>
     {navItems.map((navItem)=>  <NavLink to={navItem.path}>{navItem.label}</NavLink>)}
     </div>
