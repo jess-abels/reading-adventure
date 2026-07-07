@@ -16,7 +16,9 @@ export default function Sidebar() {
   return (
     <div id="sidebar">
     <h1>My Reading Adventure</h1>
-    {navItems.map((navItem)=>  <NavLink to={navItem.path}>{navItem.label}</NavLink>)}
+    <ul>
+    {navItems.map((navItem)=>  <li key={navItem.path}> <NavLink to={navItem.path}>{navItem.label}</NavLink></li>)}
+    </ul>
     </div>
   )
 }
