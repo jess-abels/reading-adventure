@@ -2,8 +2,10 @@ export const books = [
   {
     id: 1,
     title: "The Forest Adventure",
-    author: "Alex Smith",
-    cover: "/images/forest-adventure.jpg",
+    author: "Tony Mitton",
+    description: "An adventure in the forest",
+    status: "wantToRead",
+    cover: "/books/forest-adventure.png",
     pages: [
       {
         pageNumber: 1,
