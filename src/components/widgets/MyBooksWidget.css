@@ -1,0 +1,7 @@
+.book-categories {
+    display: flex;
+}
+
+.category-card {
+    padding: 20px;
+}
