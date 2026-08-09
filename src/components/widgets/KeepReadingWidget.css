@@ -1,0 +1,12 @@
+#keep-reading-widget {
+.book-card {
+    display: flex;
+    height: 250px;
+    background-color: #eff9ea;
+    border-radius: 15px;
+}
+
+.book-info {
+    padding: 20px;
+}
+}

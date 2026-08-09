@@ -8,7 +8,6 @@ export default function MyBooks() {
   return (
     <div>
     <h1>My Books</h1>
-
     <h3>Want to Read</h3>
     <BookCard filteredBooks={wantToRead}/>
      <h3>Currently Reading</h3>

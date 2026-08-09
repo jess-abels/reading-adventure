@@ -1,5 +1,6 @@
 import  "./MyBooksWidget.css"
 import {books} from  "../../data/books";
+import { Link } from "react-router-dom";
 
 export default function MyBooksWidget() {
     const numWantToRead = books.filter((book) => book.status === "wantToRead").length;
@@ -8,7 +9,10 @@ export default function MyBooksWidget() {
 
   return (
     <div>
+    <div className="mybooks-header">
     <h1>My Books</h1>
+    <Link to="/books">See all</Link>
+    </div>
     <div className="book-categories">
       <div className="category-card yellow">Want To Read
         <p>{numWantToRead} books</p>

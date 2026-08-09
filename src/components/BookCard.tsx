@@ -6,7 +6,6 @@ export default function BookCard({filteredBooks}:any) {
     <div>
         <ul className="book-card-container">
 {filteredBooks.map((book:any) =>  (
-
       <li className="book-card">
         <img src={book.cover}/>
         <div className="book-info">

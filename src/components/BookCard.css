@@ -1,6 +1,6 @@
 .book-card-container {
     display: flex;
-    li.book-card {
+    .book-card {
         list-style: none;
         background-color: #eff9ea;
         padding: 15px;
