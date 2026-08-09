@@ -5,7 +5,7 @@ export default function KeepReadingWidget() {
   const latestBookReading = books.filter((book)=> book.status === "currentlyReading")[0]
   return (
     <div id="keep-reading-widget">
-    <h3>Keep Reading</h3>
+    <h2>Keep Reading</h2>
     <div className="book-card">
         <img src={latestBookReading.cover}/>
         <div className="book-info">

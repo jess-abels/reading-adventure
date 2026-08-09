@@ -10,7 +10,7 @@ export default function MyBooksWidget() {
   return (
     <div>
     <div className="mybooks-header">
-    <h1>My Books</h1>
+    <h2>My Books</h2>
     <Link to="/books">See all</Link>
     </div>
     <div className="book-categories">
