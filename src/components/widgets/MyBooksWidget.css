@@ -4,4 +4,20 @@
 
 .category-card {
     padding: 20px;
+    margin-right:20px;
+    border-radius: 15px;
+    width: 150px;
+    height: 100px;
+}
+
+.green {
+    background-color: #eff9ea
+}
+
+.yellow {
+background-color: #fff5cf;
+}
+
+.blue {
+    background-color: #e4f0fe;
 }
