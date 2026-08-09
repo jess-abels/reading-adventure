@@ -4,7 +4,7 @@ import {books} from  "../../data/books";
 export default function MyBooksWidget() {
     const numWantToRead = books.filter((book) => book.status === "wantToRead").length;
     const currentlyReading = books.filter((book) => book.status === "currentlyReading").length;
-    const finishedReading = books.filter((book) => book.status === "finishedReading").length;
+    const finishedReading = books.filter((book) => book.status === "finished").length;
 
   return (
     <div>
