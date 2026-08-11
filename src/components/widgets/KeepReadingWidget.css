@@ -4,9 +4,20 @@
     height: 250px;
     background-color: #eff9ea;
     border-radius: 15px;
+    padding: 20px;
+}
+
+.keep-reading-header {
+    display: flex;
+    flex-direction: column;
+
+    img {
+        height: 70%;
+        border-radius: 15px;
+    }
 }
 
 .book-info {
-    padding: 20px;
+    margin: 50px;
 }
 }

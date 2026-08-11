@@ -1,0 +1,32 @@
+#progressBar {
+  appearance: none;
+  border-radius: 100px;
+  width: 300px;
+  margin-right: 20px;
+    
+  /* Chrome and Safari */
+  &::-webkit-progress-bar {
+    background: #d4eed3;
+    border-radius: 100px;
+  }
+
+  &::-webkit-progress-value {
+    background-color: #4cc66b;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+  }
+
+  /* Firefox */
+  &::-moz-progress-bar {
+    background-color: #4cc66b;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+  }
+}
+
+
+/* #4dc76f - green*/
+
+/* #ffeeea light pink */
+
+/* #fe8497 dark pink  */

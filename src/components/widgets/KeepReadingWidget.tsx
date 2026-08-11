@@ -1,16 +1,21 @@
 import  "./KeepReadingWidget.css"
 import {books} from  "../../data/books";
+import ProgressBar from "../ProgressBar";
 
 export default function KeepReadingWidget() {
   const latestBookReading = books.filter((book)=> book.status === "currentlyReading")[0]
   return (
     <div id="keep-reading-widget">
-    <h2>Keep Reading</h2>
+
     <div className="book-card">
+        <div className="keep-reading-header">
+        <h2>Keep Reading</h2>
         <img src={latestBookReading.cover}/>
+        </div>
         <div className="book-info">
         <h3>{latestBookReading.title}</h3>
         <p>{`By ${latestBookReading.author}`}</p>
+        <ProgressBar/>
         <button>Continue Reading</button>
         </div>
     </div>
