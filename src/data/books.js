@@ -5,7 +5,7 @@ export const books = [
     author: "Beatrix Potter",
     description:
       "Peter Rabbit sneaks into Mr. McGregor's garden and finds himself in a very tricky adventure.",
-    status: "wantToRead",
+    status: "currentlyReading",
     cover: "/books/peter-rabbit.jpg",
     pages: [
       {
@@ -29,7 +29,7 @@ export const books = [
     author: "Beatrix Potter",
     description:
       "Squirrel Nutkin travels to Owl Island with his brothers and discovers that teasing can get him into trouble.",
-    status: "currentlyReading",
+    status: "wantToRead",
     currentPage: 2,
     cover: "/books/squirrel-nutkin.jpg",
     pages: [

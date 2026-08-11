@@ -1,6 +1,7 @@
 import  "./KeepReadingWidget.css"
 import {books} from  "../../data/books";
 import ProgressBar from "../ProgressBar";
+import Button from "../Button";
 
 export default function KeepReadingWidget() {
   const latestBookReading = books.filter((book)=> book.status === "currentlyReading")[0]
@@ -16,7 +17,7 @@ export default function KeepReadingWidget() {
         <h3>{latestBookReading.title}</h3>
         <p>{`By ${latestBookReading.author}`}</p>
         <ProgressBar/>
-        <button>Continue Reading</button>
+        <Button text="Keep Reading"/>
         </div>
     </div>
     </div>
