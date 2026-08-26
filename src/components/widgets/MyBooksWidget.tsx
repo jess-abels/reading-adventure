@@ -14,13 +14,16 @@ export default function MyBooksWidget() {
     <Link to="/books">See all</Link>
     </div>
     <div className="book-categories">
-      <div className="category-card yellow">Want To Read
+      <div className="category-card yellow">
+        <p className="category-card-header">Want To Read</p>
         <p>{numWantToRead} books</p>
       </div>
-      <div className="category-card blue">Currently Reading
+      <div className="category-card blue">
+        <p className="category-card-header">Currently Reading</p>
         <p>{currentlyReading} books</p>
       </div>
-      <div className="category-card green">Finished
+      <div className="category-card green">
+        <p className="category-card-header">Finished</p>
         <p>{finishedReading} books</p>
       </div>
    </div>

@@ -4,6 +4,20 @@
     width: 250px;
     background-color: #e4f0fe;
     padding: 30px;
+
+    .nav-item {
+        display: flex;
+    }
+    .sidebar-icon {
+        width: 30px;
+        margin-right: 20px;
+    }
+
+    #logo {
+        display: block;
+        margin: 0 auto;
+    }
+
     h1 {
         text-align: center;
     }
@@ -20,4 +34,11 @@
         }
     }
 
+    img {
+        width: 100px;
+    }
+    #reading-girl-img {
+        width: 200px;
+        margin-top: 200px;
+    }
 }

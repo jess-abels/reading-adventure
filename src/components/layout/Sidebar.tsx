@@ -1,29 +1,28 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "./Sidebar.css";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHouse, faBook } from "@fortawesome/free-solid-svg-icons";
-
 
 export default function Sidebar() {
     const navItems = [
   {
     label: "Home",
     path: "/",
-    icon: faHouse
+    img: "./images/home-icon.png"
   },
   {
     label: "My Books",
     path: "/books",
-    icon:faBook
+    img:"./images/book-icon.png"
   }
 ];
 
   return (
     <div id="sidebar">
+    <Link to="/"><img id="logo" src="./images/rainbow-book.png"/></Link>
     <h1>My Reading Adventure</h1>
     <ul>
-    {navItems.map((navItem)=>  <><li key={navItem.path}><FontAwesomeIcon icon={navItem.icon}></FontAwesomeIcon> <NavLink to={navItem.path}>{navItem.label}</NavLink></li></>)}
+    {navItems.map((navItem)=>  <><li className="nav-item" key={navItem.path}><img className="sidebar-icon"src={navItem.img}/> <NavLink to={navItem.path}>{navItem.label}</NavLink></li></>)}
     </ul>
+    <img id="reading-girl-img" src="./images/girl-reading.png"/>
     </div>
   )
 }

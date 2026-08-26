@@ -11,10 +11,12 @@
     padding: 20px;
     margin-right:20px;
     border-radius: 15px;
-    width: 150px;
+    width: 200px;
     height: 100px;
 }
-
+.category-card-header {
+    font-weight: bold;
+}
 .green {
     background-color: #eff9ea
 }
