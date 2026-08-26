@@ -16,7 +16,7 @@ export default function KeepReadingWidget() {
         <div className="book-info">
         <h3>{latestBookReading.title}</h3>
         <p>{`By ${latestBookReading.author}`}</p>
-        <ProgressBar/>
+        <ProgressBar text="80%"/>
         <Button text="Keep Reading"/>
         </div>
     </div>
