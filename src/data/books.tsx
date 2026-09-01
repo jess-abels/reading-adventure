@@ -1,4 +1,6 @@
-export const books = [
+import { Book } from "../components/types/Book";
+
+export const books: Book[] = [
   {
     id: 1,
     title: "The Tale of Peter Rabbit",
@@ -6,6 +8,7 @@ export const books = [
     description:
       "Peter Rabbit sneaks into Mr. McGregor's garden and finds himself in a very tricky adventure.",
     status: "currentlyReading",
+    currentPage: null,
     cover: "/books/peter-rabbit.jpg",
     pages: [
       {
@@ -20,7 +23,7 @@ export const books = [
         pageNumber: 3,
         text: "He nibbled some radishes and then began looking for something else to eat."
       }
-    ]
+    ],
   },
 
   {
@@ -55,6 +58,7 @@ export const books = [
     description:
       "Benjamin Bunny and his cousin Peter return to Mr. McGregor's garden looking for trouble.",
     status: "finished",
+    currentPage: null,
     cover: "/books/benjamin-bunny.jpg",
     pages: [
       {
@@ -79,6 +83,7 @@ export const books = [
     description:
       "A hardworking little hen discovers what happens when her friends refuse to help.",
     status: "wantToRead",
+    currentPage: null,
     cover: "/books/little-red-hen.jpg",
     pages: [
       {
@@ -128,6 +133,7 @@ export const books = [
     description:
       "Alice follows a curious white rabbit and tumbles into a strange and wonderful world.",
     status: "finished",
+    currentPage: null,
     cover: "/books/alice.jpg",
     pages: [
       {

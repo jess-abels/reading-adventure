@@ -1,10 +1,7 @@
 import  "./DailyReadingWidget.css"
-import {books} from  "../../data/books";
 import ProgressBar from "../ProgressBar";
-import Button from "../Button";
 
 export default function DailyReadingWidget() {
-  const latestBookReading = books.filter((book)=> book.status === "currentlyReading")[0]
   return (
     <div id="keep-reading-widget">
 

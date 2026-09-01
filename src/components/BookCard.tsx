@@ -1,11 +1,16 @@
 import  "./BookCard.css"
+import { Book } from "./types/Book";
 
-export default function BookCard({filteredBooks}:any) {
+interface BookProps {
+  filteredBooks: Book[];
+}
+
+export default function BookCard({filteredBooks}: BookProps) {
 
   return (
     <div>
         <ul className="book-card-container">
-{filteredBooks.map((book:any) =>  (
+{filteredBooks.map((book) =>  (
       <li className="book-card">
         <img src={book.cover}/>
         <div className="book-info">
@@ -14,10 +19,8 @@ export default function BookCard({filteredBooks}:any) {
         <p>{book.description}</p>
         </div>
       </li>
-   
 ))
 }   </ul>
-    
     </div>
   )
 }
