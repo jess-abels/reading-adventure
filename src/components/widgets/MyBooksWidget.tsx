@@ -8,7 +8,7 @@ export default function MyBooksWidget() {
     const finishedReading = books.filter((book) => book.status === "finished").length;
 
   return (
-    <div>
+    <section id="my-books-widget">
     <div className="mybooks-header">
     <h2>My Books</h2>
     <Link to="/books">See all</Link>
@@ -27,6 +27,6 @@ export default function MyBooksWidget() {
         <p>{finishedReading} books</p>
       </div>
    </div>
-    </div>
+    </section>
   )
 }
