@@ -1,8 +1,11 @@
 #progressBar {
   appearance: none;
   border-radius: 100px;
-  width: 300px;
-  margin-right: 20px;
+  margin-right: 5px;
+  @media(min-width:600px){
+    margin-right: 20px;
+  }
+
     
   /* Chrome and Safari */
   &::-webkit-progress-bar {

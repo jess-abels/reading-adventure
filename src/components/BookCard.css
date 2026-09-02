@@ -1,12 +1,15 @@
 .book-card-container {
     display: flex;
+    flex-direction: column;
+    @media(min-width:600px){
+        flex-direction: row;
+    }
     .book-card {
         list-style: none;
         background-color: #eff9ea;
         padding: 15px;
         border-radius: 15px;
         margin: 5px;
-        width:300px
         }
     img {
         height: 250px;
