@@ -1,0 +1,6 @@
+#goal-tab-header {
+    display: flex;
+    .active, .completed, .all {
+        margin-right: 20px;
+    }
+}
