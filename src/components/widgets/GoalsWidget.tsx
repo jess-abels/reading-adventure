@@ -1,7 +1,8 @@
-import  "./DailyReadingWidget.css"
+import  "./GoalsWidget.css"
 import ProgressBar from "../ProgressBar";
 
-export default function DailyReadingWidget() {
+export default function GoalsWidget({goals}:any) {
+  console.log(goals)
   return (
     <section id="keep-reading-widget">
     <div>

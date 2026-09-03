@@ -12,6 +12,11 @@ export default function Sidebar() {
     label: "My Books",
     path: "/books",
     img:"./images/book-icon.png"
+  },
+  {
+    label: "Goals",
+    path: "/goals",
+    img: "./images/goals-icon.png"
   }
 ];
 
