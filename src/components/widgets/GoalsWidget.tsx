@@ -8,8 +8,8 @@ export default function GoalsWidget({goals}:any) {
     <div>
         <div className="daily-reading-container">
         <h2>Daily Reading Goal</h2>
-        <p>15 minutes</p>
-        <ProgressBar text="10/15 minutes"color="pink"/>
+        <p>{`${goals.total} minutes`}</p>
+        <ProgressBar progressValue={goals.progress} progressTotal={goals.total} color="red" goalType={goals.type}/>
     </div>
     </div>
     </section>

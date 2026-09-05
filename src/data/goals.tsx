@@ -4,7 +4,7 @@ export const goals = [
     type: "daily",
     name: "Read 15 minutes every day",
     progress: 7,
-    total: 10,
+    total: 15,
     status: "active"
   },
   {
