@@ -15,16 +15,25 @@ export default function MyBooksWidget() {
     </div>
     <div className="book-categories">
       <div className="category-card yellow">
+        <div>
         <p className="category-card-header">Want To Read</p>
         <p>{numWantToRead} books</p>
+        </div>
+        <img className="book-img" src="./images/book-icon-2.png"/>
       </div>
       <div className="category-card blue">
+        <div>
         <p className="category-card-header">Currently Reading</p>
         <p>{currentlyReading} books</p>
+        </div>
+        <img className="book-img" src="./images/book-icon-3.png"/>
       </div>
       <div className="category-card green">
+        <div>
         <p className="category-card-header">Finished</p>
         <p>{finishedReading} books</p>
+        </div>
+        <img className="book-img" src="./images/book-icon-1.png"/>
       </div>
    </div>
     </section>

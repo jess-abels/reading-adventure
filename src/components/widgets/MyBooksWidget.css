@@ -12,10 +12,13 @@
 }
 
 .category-card {
+    
     padding: 20px;
     border-radius: 15px;
     margin-bottom: 10px;
     @media(min-width:600px){
+        display: flex;
+        flex-direction: column;
         margin-right:20px;
         width: 33.33%;
     }
@@ -37,4 +40,9 @@
 
 .pink {
     background-color: rgb(240, 200, 207);
+}
+
+.book-img {
+    width: 100px;
+    height: 100px;
 }

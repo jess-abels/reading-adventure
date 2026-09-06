@@ -27,7 +27,7 @@ export default function Sidebar() {
     <ul>
     {navItems.map((navItem)=>  <><li className="nav-item" key={navItem.path}><img className="sidebar-icon"src={navItem.img}/> <NavLink to={navItem.path}>{navItem.label}</NavLink></li></>)}
     </ul>
-    <img id="reading-girl-img" src="./images/girl-reading.png"/>
+    <img id="reading-cat-img" src="./images/cat-reading.png"/>
     </div>
   )
 }

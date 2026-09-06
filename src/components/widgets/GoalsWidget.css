@@ -1,4 +1,6 @@
 .daily-reading-container{
+    display: flex;
+    justify-content: space-between;
     height: 150px;
     background-color: rgb(255, 222, 227);
     border-radius: 15px;

@@ -8,7 +8,6 @@ interface BookProps {
 export default function BookCard({filteredBooks}: BookProps) {
 
   return (
-    <div>
         <ul className="book-card-container">
 {filteredBooks.map((book) =>  (
       <li className="book-card">
@@ -21,6 +20,5 @@ export default function BookCard({filteredBooks}: BookProps) {
       </li>
 ))
 }   </ul>
-    </div>
   )
 }
