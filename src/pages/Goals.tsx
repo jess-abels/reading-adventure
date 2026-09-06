@@ -15,15 +15,20 @@ export default function Goals() {
 
     const displayGoals = () => {
         let goals = selectedGoalTab === "active" ? activeGoals : selectedGoalTab === "completed" ? completedGoals : allGoals
-                return <div className="goal-info">
+                return <div>
                 {goals.map((goal)=> {
                 return (
-                <>
+                <div className="goal-info">
+                <div id="goal-img-container">
+                <img className="goal-img" src={goal.type === "daily" ? "./images/clock-icon.png" : "./images/green-book-icon.png"}/>
+                </div>
+                <div>
                 <h4>{goal.name}</h4>
-                <span>{goal.type} Goal</span>
+                <span>{goal.type} Goal</span><br/>
                 <span>{goal.type === "daily" ? "Daily" : "Ends in 12 days"}</span>
                 <ProgressBar color="blue" progressValue={goal.progress} progressTotal={goal.total} goalType={goal.type}/>
-                </>  
+               </div>
+                </div>  
                 )
             })}
         </div> 
